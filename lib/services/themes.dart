@@ -17,7 +17,7 @@ class MyTheme {
           )
       ),
       appBarTheme: AppBarTheme(
-          backgroundColor: Colors.white,
+          backgroundColor: creamColor,
           elevation: 0.0,
           iconTheme: const IconThemeData(color: Colors.black),
           titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.black)
@@ -41,7 +41,7 @@ class MyTheme {
               )
           ),
           appBarTheme: AppBarTheme(
-              backgroundColor: Colors.white,
+              backgroundColor: darkBgColor,
               elevation: 0.0,
               iconTheme: const IconThemeData(color: Colors.white),
               titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.white)
@@ -52,6 +52,6 @@ class MyTheme {
   static Color creamColor = const Color(0xfffcfbf4);
   static Color darkBgColor = Colors.blueGrey[900]!;
   static Color darkBluishColor = const Color(0xff403b58);
-  static Color lightBluishColor = Colors.pink[900]!;
+  static Color lightBluishColor = const Color(0xFF274a99);
 
 }

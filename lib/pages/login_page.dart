@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:learningapp/pages/forget_password.dart';
 import 'package:learningapp/pages/signup_page.dart';
 import 'package:learningapp/pages/welcome_page.dart';
 import 'package:learningapp/widgets/login_signup_widgets/sign_in_up_button.dart';
@@ -44,6 +45,16 @@ class _LoginPageState extends State<LoginPage> {
               TextForm(isPassword: false,labelText: "Email",controller: _emailController,),
               const SizedBox(height: 20,),
               TextForm(isPassword: true,labelText: "Password",controller: _passwordController,),
+              const SizedBox(height: 20,),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.end,
+                children: [
+                  TextButton(onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgetPassword()));
+                  },
+                      child: const Text("Forgot Password"))
+                ],
+              ),
               const SizedBox(height: 40,),
               SignButton(text: "Log In",onPressed: _signIn,isSigning: isSigning,),
               Row(
@@ -77,7 +88,7 @@ class _LoginPageState extends State<LoginPage> {
     });
 
     if(user != null){
-      showToast(message: ait"User is successfully logged in");
+      showToast(message: "User is successfully logged in");
       Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomePage()));
     }
     else{
