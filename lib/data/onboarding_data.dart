@@ -3,18 +3,18 @@ class OnboardingData{
 
   List<OnboardingInfo> items = [
     OnboardingInfo(
-        title: "Programming lectures",
-        description: " explore video lectures, quizzes, and notes for various programming languages.",
+        title: "Welcome to QuizWiz",
+        description: " Dive into the world of knowledge, fun, and challenges with our diverse range of quizzes.",
         image: "assets/images/onboarding1.gif"),
 
     OnboardingInfo(
-        title: "Dive into Interactivity",
-        description: "Engage with skill-enhancing quizzes, delve into comprehensive notes, and practice hands-on coding exercises across a spectrum of languages",
+        title: "Select Your difficulty",
+        description: "Ready for the challenge? QuizWiz offers quizzes in three exciting difficulty levels",
         image: "assets/images/onboarding2.gif"),
 
     OnboardingInfo(
-        title: "Your Personal Coding Sanctuary",
-        description: "Access a library of video lectures, challenge yourself with insightful quizzes, and explore in-depth notes and code snippets tailored to various programming languages.",
+        title: "Follow Your Interest",
+        description: "Tell us what topics spark your curiosity! Choose your favorite categories from a wide array of options - science, history, sports, entertainment, and more.",
         image: "assets/images/onboarding3.gif"),
 
   ];
