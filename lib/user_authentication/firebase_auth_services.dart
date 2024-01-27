@@ -35,7 +35,6 @@ class FirebaseAuthService {
         showToast(message: "Invalid email or password.");
       } else {
         showToast(message: "An error occurred : ${e.code}");
-        print("An error occurred : ${e.code}");
       }
     }
     return null;
@@ -48,6 +47,7 @@ class FirebaseAuthService {
           context: context,
           builder: (context) {
             return const AlertDialog(
+              title: Text("Success"),
               content: Text("Password reset link sent!, Check you email!"),
               icon: Icon(
                 CupertinoIcons.check_mark_circled_solid,
@@ -57,7 +57,6 @@ class FirebaseAuthService {
           });
       Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()));
     } on FirebaseAuthException catch (e) {
-      print(e);
       showDialog(
           context: context,
           builder: (context) {

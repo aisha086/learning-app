@@ -38,7 +38,12 @@ class _TextFormState extends State<TextForm> {
       validator: widget.validator,
       onFieldSubmitted: widget.onFieldSubmitted,
       decoration: InputDecoration(
-        border: InputBorder.none,
+        border: OutlineInputBorder(borderSide: BorderSide(
+          color: Theme.of(context).focusColor,
+          width: 0.5
+        ),
+          borderRadius: BorderRadius.circular(10)
+        ),
           labelText: widget.labelText,
         suffixIcon: widget.isPassword?
         GestureDetector(

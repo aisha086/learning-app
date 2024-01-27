@@ -4,23 +4,24 @@ import 'package:google_fonts/google_fonts.dart';
 class MyTheme {
   static ThemeData lightTheme(BuildContext context) => ThemeData(
       fontFamily: GoogleFonts.poppins().fontFamily,
-      cardColor: Colors.white,
-      canvasColor: creamColor,
-      indicatorColor: darkBluishColor,
-      primaryColor: darkBluishColor,
+      indicatorColor: darkCanvasColor,
+      cardColor: lightIconColor,
+      canvasColor: lightCanvasColor,
+      primaryColor: lightAppBarColor,
+      focusColor: lightContainerColor,
       floatingActionButtonTheme: FloatingActionButtonThemeData(
-          backgroundColor: darkBluishColor
+          backgroundColor: lightIconColor
       ),
       elevatedButtonTheme: ElevatedButtonThemeData(
           style: ButtonStyle(
-              backgroundColor: MaterialStateProperty.all(darkBluishColor)
+              backgroundColor: MaterialStateProperty.all(lightAppBarColor)
           )
       ),
       appBarTheme: AppBarTheme(
-          backgroundColor: creamColor,
+          backgroundColor: lightAppBarColor,
           elevation: 0.0,
-          iconTheme: const IconThemeData(color: Colors.black),
-          titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.black)
+          iconTheme: const IconThemeData(color: Colors.white),
+          titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: darkCanvasColor)
       )
   );
 
@@ -28,30 +29,35 @@ class MyTheme {
       ThemeData(
           brightness: Brightness.dark,
           fontFamily: GoogleFonts.poppins().fontFamily,
-          cardColor: Colors.black,
-          canvasColor: darkBgColor,
-          indicatorColor: Colors.white,
-          primaryColor: lightBluishColor,
+          indicatorColor: lightCanvasColor,
+          cardColor: darkIconColor,
+          canvasColor: darkCanvasColor,
+          primaryColor: darkAppBarColor,
+          focusColor: darkContainerColor,
           floatingActionButtonTheme: FloatingActionButtonThemeData(
-              backgroundColor: lightBluishColor
+              backgroundColor: darkIconColor
           ),
           elevatedButtonTheme: ElevatedButtonThemeData(
               style: ButtonStyle(
-                  backgroundColor: MaterialStateProperty.all(lightBluishColor)
+                  backgroundColor: MaterialStateProperty.all(darkAppBarColor)
               )
           ),
           appBarTheme: AppBarTheme(
-              backgroundColor: darkBgColor,
+              backgroundColor: darkAppBarColor,
               elevation: 0.0,
               iconTheme: const IconThemeData(color: Colors.white),
-              titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: Colors.white)
+              titleTextStyle: Theme.of(context).textTheme.titleLarge!.copyWith(color: lightCanvasColor)
           )
       );
 
   //Colors
-  static Color creamColor = const Color(0xfffcfbf4);
-  static Color darkBgColor = Colors.blueGrey[900]!;
-  static Color darkBluishColor = const Color(0xff403b58);
-  static Color lightBluishColor = const Color(0xFF274a99);
+  static Color lightCanvasColor = const Color(0xfffffbf5);
+  static Color lightContainerColor = const Color(0xfff7EFE5);
+  static Color lightIconColor = const Color(0xffC3ACD0);
+  static Color lightAppBarColor = const Color(0xff7743DB);
+  static Color darkCanvasColor = const Color(0xff222831);
+  static Color darkContainerColor = const Color(0xff393E46);
+  static Color darkIconColor = const Color(0xffd05aed);
+  static Color darkAppBarColor = const Color(0xff7743DB);
 
 }

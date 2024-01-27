@@ -1,7 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:learningapp/pages/login_page.dart';
-import 'package:learningapp/pages/welcome_page.dart';
 import 'package:learningapp/user_authentication/firebase_auth_services.dart';
 import 'package:learningapp/widgets/toast.dart';
 
@@ -40,7 +39,10 @@ class _SignUpState extends State<SignUp> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Sign Up", style: Theme.of(context).textTheme.headlineLarge),
+              Text("Sign Up", style: TextStyle(
+                fontSize: 40,
+                color: Theme.of(context).primaryColor
+              )),
               const SizedBox(
                 height: 20,
               ),
@@ -104,10 +106,9 @@ class _SignUpState extends State<SignUp> {
 
     if(user != null){
       showToast(message: "User is successfully created");
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomePage()));
+      Navigator.push(context, MaterialPageRoute(builder: (context) => const LoginPage()));
     }
     else{
-      print("Something went wrong");
     }
   }
 

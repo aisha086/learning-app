@@ -33,7 +33,10 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text("Reset Password",
-                  style: Theme.of(context).textTheme.headlineLarge,
+                  style: TextStyle(
+                      fontSize: 30,
+                      color: Theme.of(context).primaryColor
+                  ),
                 ),
                 const SizedBox(height: 20,),
                 TextForm(isPassword: false,labelText: "Email",controller: _emailController,),

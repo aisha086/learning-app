@@ -1,8 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:learningapp/pages/forget_password.dart';
+import 'package:learningapp/pages/onboarding_page.dart';
 import 'package:learningapp/pages/signup_page.dart';
-import 'package:learningapp/pages/welcome_page.dart';
 import 'package:learningapp/widgets/login_signup_widgets/sign_in_up_button.dart';
 import 'package:learningapp/widgets/toast.dart';
 
@@ -17,7 +17,6 @@ class LoginPage extends StatefulWidget {
 }
 
 class _LoginPageState extends State<LoginPage> {
-
   bool isSigning = false;
   final FirebaseAuthService _auth = FirebaseAuthService();
   final TextEditingController _emailController = TextEditingController();
@@ -29,6 +28,7 @@ class _LoginPageState extends State<LoginPage> {
     _passwordController.dispose();
     super.dispose();
   }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -38,32 +38,64 @@ class _LoginPageState extends State<LoginPage> {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text("Log In",
-                style: Theme.of(context).textTheme.headlineLarge,
+              Text(
+                "Log In",
+                style: TextStyle(
+                    fontSize: 40,
+                    color: Theme.of(context).primaryColor
                 ),
-              const SizedBox(height: 20,),
-              TextForm(isPassword: false,labelText: "Email",controller: _emailController,),
-              const SizedBox(height: 20,),
-              TextForm(isPassword: true,labelText: "Password",controller: _passwordController,),
-              const SizedBox(height: 20,),
+              ),
+              const SizedBox(
+                height: 50,
+              ),
+              TextForm(
+                isPassword: false,
+                labelText: "Email",
+                controller: _emailController,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
+              TextForm(
+                isPassword: true,
+                labelText: "Password",
+                controller: _passwordController,
+              ),
+              const SizedBox(
+                height: 20,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.end,
                 children: [
-                  TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const ForgetPassword()));
-                  },
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const ForgetPassword()));
+                      },
                       child: const Text("Forgot Password"))
                 ],
               ),
-              const SizedBox(height: 40,),
-              SignButton(text: "Log In",onPressed: _signIn,isSigning: isSigning,),
+              const SizedBox(
+                height: 20,
+              ),
+              SignButton(
+                text: "Log In",
+                onPressed: _signIn,
+                isSigning: isSigning,
+              ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   const Text("Don't have an account?"),
-                  TextButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const SignUp()));
-                  },
+                  TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => const SignUp()));
+                      },
                       child: const Text("Sign Up"))
                 ],
               )
@@ -87,12 +119,12 @@ class _LoginPageState extends State<LoginPage> {
       isSigning = false;
     });
 
-    if(user != null){
+    if (user != null) {
       showToast(message: "User is successfully logged in");
-      Navigator.push(context, MaterialPageRoute(builder: (context) => const WelcomePage()));
-    }
-    else{
-      print("Something went wrong");
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => const OnboardingPage()));
+    } else {
+      showToast(message: "Something went wrong");
     }
   }
 }
