@@ -1,17 +1,10 @@
 # learningapp
 
-A new Flutter project.
+A Quiz App built using Flutter, firebase, and open-source trivia API
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+To get started with the project, create a project in Firebase and configure it in the clone project.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+You're all set! customize the app to your liking and explore the flutter world!
 # learning-app
