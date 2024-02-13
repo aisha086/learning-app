@@ -44,37 +44,37 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyCCIX7nzKGDfYX-doFliNXaWG_WCzg7fAM',
-    appId: '1:156600665362:web:2334b68faea64f8a581fcb',
-    messagingSenderId: '156600665362',
-    projectId: 'learningapp-89c0f',
-    authDomain: 'learningapp-89c0f.firebaseapp.com',
-    storageBucket: 'learningapp-89c0f.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyA7qI4OjHheAREfPmvVrTkmf44KL1XvcK4',
-    appId: '1:156600665362:android:1d0748a6b2d0ee7b581fcb',
-    messagingSenderId: '156600665362',
-    projectId: 'learningapp-89c0f',
-    storageBucket: 'learningapp-89c0f.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB92Mt8UYu45W6qrtulN1mSrlOHlURgTmE',
-    appId: '1:156600665362:ios:64792247cd63b6b1581fcb',
-    messagingSenderId: '156600665362',
-    projectId: 'learningapp-89c0f',
-    storageBucket: 'learningapp-89c0f.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
     iosBundleId: 'com.example.learningapp',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB92Mt8UYu45W6qrtulN1mSrlOHlURgTmE',
-    appId: '1:156600665362:ios:2f9cedd0db3f2bf7581fcb',
-    messagingSenderId: '156600665362',
-    projectId: 'learningapp-89c0f',
-    storageBucket: 'learningapp-89c0f.appspot.com',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
     iosBundleId: 'com.example.learningapp.RunnerTests',
   );
 }
