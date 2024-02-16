@@ -29,7 +29,8 @@ Following are some snapshots from the project
 <img src="https://github.com/aisha086/learning-app/assets/128243926/065b263a-e2b6-4f08
 
 # Difficulty Level Screen
-<img src="https://github.com/aisha086/learning-app/assets/128243926/f3ea0d66-9601-454a-97de-d85d9bb41de3" height="500" alt="WhatsApp Image 2024-02-16 at 23 59 30_1539d54d">
+
+<img src="https://github.com/aisha086/learning-app/assets/128243926/e174f2e6-7b71-4aed-9227-177b83f80364" height="500" alt="WhatsApp Image 2024-02-16 at 23 59 30_0b38cd44">
 <img src="https://github.com/aisha086/learning-app/assets/128243926/541ad06e-544f-4413-999e-729a36f8be7a" height="500" alt="WhatsApp Image 2024-02-16 at 23 59 33_fdb5964d">
 
 # Quiz Screen
