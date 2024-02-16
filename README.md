@@ -26,7 +26,8 @@ Following are some snapshots from the project
 
 # Search Category
 <img src="https://github.com/aisha086/learning-app/assets/128243926/6d04ec2d-c1a5-4cd9-b0a1-036ab727ce0e" height="500" alt="WhatsApp Image 2024-02-16 at 23 59 30_b7fef6bb">
-<img src="https://github.com/aisha086/learning-app/assets/128243926/065b263a-e2b6-4f08
+<img src="https://github.com/aisha086/learning-app/assets/128243926/4ed5f24c-da5d-4f22-a7f3-9241aa781dac" height="500" alt="WhatsApp Image 2024-02-16 at 23 59 30_39630ece">
+
 
 # Difficulty Level Screen
 
